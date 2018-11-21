@@ -9,6 +9,17 @@
 <body>
     <h4>CLOSURES are isolated stateful functions.</h4>
     <h4>They are in real functions inside the functions</h4>
+    <h2>WHY ARE CLOSURES NEEDED??</h2>
+    <h3>SNIPPET 1:Problem with it is we get output as 1 even after calling the function second time where the outout should be 2. 
+        So we want let counter to be remembered. for that counter = 0 can be declared globally.
+    <br> The issue with this isonce a variable is declared globally , it might be used by more than one function at the same time.  </h3>
+    <h3>We want to have <ul>
+        <li>Modulated</li>
+        <li>Isolated</li>
+        <li>A Single unit Code</li>
+    </ul></h3>
+    <h3>In other words, we need to have a private variable , it shouls have different instance altogether, Hence comes the CLOSURES</h3>
+
     <script src="script.js"></script>
 </body>
 </html>
