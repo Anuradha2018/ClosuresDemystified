@@ -24,3 +24,25 @@ x.Increment();
 x.Increment();
 var x1 = CounterOne(); // Second Instance
 x1.Increment();
+
+/*SNIPPET 3:*/
+function Customer () { // self contained customer object, isolated, clean.
+    let _CustomerName= "";
+    let _CustomerCode= "";
+    _Validate = function() {
+        _DbConnect();
+        console.log('This is validate');
+    }
+    let _DbConnect = function(){
+
+    }
+    // Abstraction: Show only What is required
+    return {
+        CustomerName: _CustomerName,
+        CustomerCode: _CustomerCode,
+        Validate: _Validate
+    }
+} 
+var cust = new Customer();
+cust.Customer = "1000",
+cust.Validate();
