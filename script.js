@@ -26,6 +26,7 @@ var x1 = CounterOne(); // Second Instance
 x1.Increment();
 
 /*SNIPPET 3:*/
+//Encapsulation Implemented
 function Customer () { // self contained customer object, isolated, clean.
     let _CustomerName= "";
     let _CustomerCode= "";
@@ -36,7 +37,7 @@ function Customer () { // self contained customer object, isolated, clean.
     let _DbConnect = function(){
 
     }
-    // Abstraction: Show only What is required
+    // Abstraction Implemented: Show only What is required
     return {
         CustomerName: _CustomerName,
         CustomerCode: _CustomerCode,
